@@ -1,0 +1,710 @@
+@charset "UTF-8";
+body {
+  background-image: url(../images/bg-image.png);
+  color: #000;
+  font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro','メイリオ', 'Meiryo', '游ゴシック', 'Yu Gothic', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  font: size 16px;
+}
+
+/* スライドショー（ボーダーを非表示に） */
+.bx-wrapper {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  left: 0;
+  background-color: transparent;
+  margin: 0 auto;
+}
+
+.back-top {
+  position: fixed;
+  bottom: 3%;
+  right: 5%;
+  display: none;
+}
+
+.back-top {
+  position: fixed;
+  bottom: 100px;
+  right: 100px;
+  display: none;
+}
+
+.back-top i {
+  font-size: 50px;
+  color: #00A85F;
+  -webkit-filter: drop-shadow(3px 3px 3px #ccc);
+          filter: drop-shadow(3px 3px 3px #ccc);
+}
+
+header {
+  width: 100%;
+  background-color: rgba(238, 74, 34, 0.88);
+  height: 100px;
+  color: #fff;
+  font-family: "Sriracha";
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+header .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 1200px;
+  margin: 0 auto;
+  height: 100px;
+}
+
+header .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  width: 780px;
+  height: 100px;
+}
+
+header h1 {
+  font-size: 40px;
+  width: 400px;
+  height: 100px;
+  line-height: 100px;
+  letter-spacing: 2px;
+}
+
+header h1 a {
+  text-decoration: none;
+  color: #fff;
+}
+
+header span {
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 25px;
+  padding: 10px;
+}
+
+header span p {
+  margin-left: 5px;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-size: 20px;
+  list-style-type: none;
+}
+
+header ul .hvr-underline-from-left:before {
+  background-color: #00A85F;
+}
+
+header ul a {
+  display: block;
+  width: 130px;
+  height: 40px;
+  text-align: center;
+  padding: 10px 0;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+header ul a:hover {
+  color: #00A85F;
+}
+
+main .main-image img {
+  width: 100%;
+  height: 800px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 50px;
+}
+
+main h1 {
+  font-size: 50px;
+  font-family: "Sriracha";
+  color: #EE4A22;
+  text-align: center;
+  margin-bottom: 50px;
+  letter-spacing: 2px;
+}
+
+main p {
+  font-size: 18px;
+  line-height: 2;
+  text-align: center;
+  margin-bottom: 190px;
+  text-indent: 1em;
+}
+
+main h2 {
+  font-size: 40px;
+  font-family: "Sriracha";
+  text-align: center;
+  color: #EE4A22;
+  margin-bottom: 70px;
+}
+
+main h2 span {
+  font-size: 22px;
+}
+
+main .features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 780px;
+  margin-bottom: 350px;
+}
+
+main .features section {
+  width: 360px;
+  height: 580px;
+  margin-bottom: 100px;
+}
+
+main .features section h3 {
+  font-size: 30px;
+  font-family: "Sriracha";
+  color: #00A85F;
+  text-align: center;
+  margin: 20px;
+  letter-spacing: 2px;
+}
+
+main .features section p {
+  font-size: 16px;
+  text-align: justify;
+  line-height: 2;
+  padding: 10px;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 230px;
+  background-color: #EE4A22;
+  color: #fff;
+}
+
+footer .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #602F00;
+  font-size: 40px;
+}
+
+footer .icons a {
+  color: #602F00;
+}
+
+footer .icons a i {
+  margin: 10px;
+}
+
+footer h1 {
+  font-size: 40px;
+  font-family: "Sriracha";
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+footer h1 a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer address {
+  font-size: 15px;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+footer p {
+  font-size: 15px;
+  font-family: "Sriracha";
+}
+
+#menu main h1 {
+  font-size: 60px;
+  letter-spacing: 10px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+#menu main .menu-image img {
+  width: 100%;
+  height: 800px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 50px;
+}
+
+#menu main p {
+  font-size: 18px;
+  margin-bottom: 100px;
+  text-indent: 1em;
+  text-align: center;
+}
+
+#menu main .circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 780px;
+  margin: 0 auto 200px auto;
+}
+
+#menu main .recommend {
+  width: 1200px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 100px;
+}
+
+#menu main .recommend .bx-wrapper {
+  width: 700px;
+}
+
+#menu main .recommend .text {
+  width: 370px;
+}
+
+#menu main .recommend .text h2 {
+  color: #00A85F;
+  font-size: 60px;
+  margin-bottom: 20px;
+  text-align: left;
+  letter-spacing: 2px;
+}
+
+#menu main .recommend .text p {
+  font-size: 16px;
+  padding-right: 30px;
+  text-align: justify;
+  line-height: 2;
+  text-indent: 1em;
+}
+
+#menu main .others {
+  width: 1200px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 150px;
+}
+
+#menu main .others img {
+  width: 750px;
+}
+
+#menu main .others .text {
+  width: 370px;
+  height: 500px;
+  margin-top: 170px;
+}
+
+#menu main .others .text h2 {
+  color: #00A85F;
+  font-size: 60px;
+  margin-bottom: 20px;
+  letter-spacing: 5px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+#menu main .others .text p {
+  font-size: 16px;
+  padding-right: 30px;
+  text-align: justify;
+  line-height: 2;
+  text-indent: 1em;
+}
+
+#menu main .food-menu {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+#menu main .food-menu h3 {
+  background-image: url(../images/line.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  color: #602F00;
+  font-size: 20px;
+  margin-bottom: 60px;
+}
+
+#menu main .food {
+  width: 1200px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 200px;
+}
+
+#menu main .food section.list01 {
+  width: 270px;
+}
+
+#menu main .food section.list01 li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  list-style-type: none;
+  font-size: 16px;
+  color: #602F00;
+  width: 270px;
+  border-bottom: 1px dotted #602F00;
+  line-height: 2;
+  margin-bottom: 15px;
+}
+
+#menu main .food section.list02 {
+  width: 270px;
+}
+
+#menu main .food section.list02 li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  list-style-type: none;
+  font-size: 16px;
+  color: #602F00;
+  width: 270px;
+  border-bottom: 1px dotted #602F00;
+  line-height: 2;
+  margin-bottom: 15px;
+}
+
+#menu main .food section.list03 {
+  width: 270px;
+}
+
+#menu main .food section.list03 li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  list-style-type: none;
+  font-size: 16px;
+  color: #602F00;
+  width: 270px;
+  border-bottom: 1px dotted #602F00;
+  line-height: 2;
+  margin-bottom: 15px;
+}
+
+#menu main .drink-image {
+  width: 1200px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 150px;
+}
+
+#menu main .drink-image img {
+  width: 800px;
+}
+
+#menu main .drink-image .cafetime {
+  width: 320px;
+  margin-top: 220px;
+}
+
+#menu main .drink-image .cafetime h2 {
+  color: #602F00;
+  font-size: 60px;
+  margin-bottom: 20px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+#menu main .drink-image .cafetime p {
+  font-size: 16px;
+  padding-right: 30px;
+  text-align: justify;
+  text-indent: 1em;
+  line-height: 2;
+}
+
+#menu main .drink-menu {
+  width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 300px;
+}
+
+#menu main .drink-menu h3 {
+  background-image: url(../images/line.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  color: #602F00;
+  font-size: 20px;
+  margin-bottom: 60px;
+}
+
+#menu main .drink-menu .drink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 170px;
+}
+
+#menu main .drink-menu section.list01 {
+  width: 270px;
+}
+
+#menu main .drink-menu section.list01 li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  list-style-type: none;
+  font-size: 16px;
+  color: #602F00;
+  width: 270px;
+  border-bottom: 1px dotted #602F00;
+  line-height: 2;
+  margin-bottom: 15px;
+}
+
+#menu main .drink-menu section.list02 {
+  width: 270px;
+}
+
+#menu main .drink-menu section.list02 li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  list-style-type: none;
+  font-size: 16px;
+  color: #602F00;
+  width: 270px;
+  border-bottom: 1px dotted #602F00;
+  line-height: 2;
+  margin-bottom: 15px;
+}
+
+#menu main .drink-menu section.list03 {
+  width: 270px;
+}
+
+#menu main .drink-menu section.list03 li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  list-style-type: none;
+  font-size: 16px;
+  color: #602F00;
+  width: 270px;
+  border-bottom: 1px dotted #602F00;
+  line-height: 2;
+  margin-bottom: 15px;
+}
+
+#access main h1 {
+  font-size: 60px;
+  letter-spacing: 7px;
+  margin-bottom: 100px;
+}
+
+#access main .access-image {
+  margin-bottom: 50px;
+}
+
+#access main .access-image img {
+  width: 100%;
+  height: 800px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#access main table {
+  width: 640px;
+  height: 320px;
+  margin: 0 auto 170px auto;
+  color: #602F00;
+}
+
+#access main table th {
+  width: 20%;
+  font-weight: normal;
+}
+
+#access main table td {
+  height: 20%;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+#access main iframe {
+  display: block;
+  width: 100vh;
+  margin: 0 auto 300px auto;
+}
+
+#takeout main h1 {
+  font-size: 60px;
+  letter-spacing: 7px;
+  margin-bottom: 70px;
+}
+
+#career main h1 {
+  font-size: 60px;
+  letter-spacing: 7px;
+  margin-bottom: 70px;
+}
+/*# sourceMappingURL=style.css.map */

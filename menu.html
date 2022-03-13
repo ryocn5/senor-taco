@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>メニュー｜SENOR TACO（セニョールターコ）</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/76106865d7.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <link rel="stylesheet" href="css/hover.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+  <script>
+    $(function () {
+      $('.bxslider').bxSlider({
+        auto: true, // 自動でスライドショーをスタートさせる　（初期値: false）
+        mode: 'fade', // アニメーションの種類「'horizontal'」「'vertical'」「'fade'」　（初期値: 'horizontal'）
+        speed: 2000, // アニメーションのスピード　（初期値: 500）
+        pause: 5000, // 画像の切り替わる間隔　（初期値: 4000）
+        pager: false, // 下部にある画像切り替えボタンの表示・非表示　（初期値: true）
+        controls: false // 左右の矢印の表示・非表示　（初期値: true）
+      });
+    });
+  </script>
+  <script src="js/smooth-scroll.js"></script>
+  <script src="js/hover-image.js"></script>
+</head>
+
+<body id="menu">
+  <div class=page>
+    <header>
+      <div class="wrapper">
+        <h1><a href="index.html">SEÑOR TACO</a></h1>
+        <div class=inner>
+          <span><i class="fas fa-phone-alt"></i>
+            <p>098-933-9694</p>
+          </span>
+          <nav>
+            <ul>
+              <li class="hvr-underline-from-left"><a href="index.html">Home</a></li>
+              <li class="hvr-underline-from-left"><a href="index.html#features">Features</a></li>
+              <li class="hvr-underline-from-left"><a href="menu.html">Menu</a></li>
+              <li class="hvr-underline-from-left"><a href="takeout.html">Take out</a></li>
+              <li class="hvr-underline-from-left"><a href="access.html">Location</a></li>
+              <li class="hvr-underline-from-left"><a href="career.html">Career</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="menu-image"><img src="images/menu-image.jpg"></div>
+      <h1>MENU</h1>
+      <p>本格メキシカンにこだわりつつ、野菜たっぷりで毎日食べたくなる<br>フレッシュ＆ヘルシーなおいしさをお楽しみください。</p>
+      <div class=circle>
+        <a href="#tacos"><img src="images/tacos.png" class="hover-image"></a>
+        <a href="#burrito"><img src="images/burrito.png" class="hover-image"></a>
+        <a href="#drink"><img src="images/drink.png" class="hover-image"></a>
+      </div>
+
+      <div id="tacos" class="recommend">
+        <div class="bxslider">
+          <div><img src="images/recommend-1.png"></div>
+          <div><img src="images/recommend-2.png"></div>
+          <div><img src="images/recommend-3.png"></div>
+        </div>
+        <div class="text">
+          <h2>Recommend</h2>
+          <p>
+            SENOR
+            TACOのタコスは、アツアツ揚げたての外側はサクっと歯ごたえ十分。でありながらも、具と接する内側はふっくら＆モッチリ、ソフトな舌触り。タコライスもおすすめです。<br>また、「インチラーダ」は、何と言っても主役の存在感が絶大。もっちり食感に包まれた目一杯のタコミートとオリジナルソース、そして溢れんばかりのとろとろチーズで、見た目も胃袋も大満足確実です！
+          </p>
+        </div>
+      </div>
+      <div class="others">
+        <div class="text">
+          <h2>Others</h2>
+          <p>
+            「ブリートデラックス」は、知る人ぞ知るツウ好みの一品。カリっと揚げたハードシェルに、タコス同様の具材に加えて、アボカドペーストとサワークリームが加わります。このままでも十分OKですが、自慢の特製サルサソースをかければ、味が一層引き締まり多彩な味わいを楽しめます。<br>他にも「トスターダ」や「シナモンチップ」、「オニオンリング」といったサイドメニューも粒揃い。もちろん、いずれもテイクアウトOKです。
+          </p>
+        </div>
+        <img id="burrito" src="images/others.png">
+      </div>
+      <div class="food-menu">
+        <h3>フードメニュー</h3>
+        <div class="food">
+          <section class="list01">
+            <ul>
+              <li><span>タコス</span>200円</li>
+              <li><span>タコス（3個）</span>550円</li>
+              <li><span>タコライスS</span>300円</li>
+              <li><span>タコライスL</span>550円</li>
+              <li><span>タコライスセット</span>700円</li>
+            </ul>
+          </section>
+          <section class="list02">
+            <ul>
+              <li><span>ブリートビーフ・コンボ</span>370円</li>
+              <li><span>ブリート・ビーンズ</span>300円</li>
+              <li><span>ブリート・エキストラ</span>430円</li>
+              <li><span>ブリート・デラックス</span>550円</li>
+              <li><span>インチラーダ</span>600円</li>
+            </ul>
+          </section>
+          <section class="list03">
+            <ul>
+              <li><span>ビーンズスープ</span>200円</li>
+              <li><span>ライススープ</span>220円</li>
+              <li><span>オニオンリング</span>300円</li>
+              <li><span>フレンチフライ</span>140円</li>
+              <li><span>シナモンチップ</span>130円</li>
+            </ul>
+          </section>
+
+        </div>
+      </div>
+
+
+      <h1>DRINK</h1>
+      <div class="drink-image">
+        <section class="cafetime">
+          <h2>Cafe Time</h2>
+          <p>ビールやワインなどのお酒も豊富にご用意しているので、気楽な昼飲みも楽しめるのが魅力です。もちろんブレイクタイムのカフェ使いも大歓迎。思い思いの過ごし方を満喫していただければ嬉しい限りです。</p>
+        </section>
+        <img id="drink" src="images/drink-image.png">
+
+      </div>
+      <div class="drink-menu">
+        <h3>ドリンクメニュー</h3>
+        <div class="drink">
+          <section class="list01">
+            <ul>
+              <li><span>オリオンビール</span>450円</li>
+              <li><span>メキシカンビール</span>600円</li>
+              <li><span>グラスワイン赤・白</span>450円</li>
+              <li><span>ハイボール</span>450円 </li>
+            </ul>
+          </section>
+          <section class="list02">
+            <li><span>サングリア</span>450円</li>
+            <li><span>テキーラショット</span>450円〜</li>
+            <li><span>ハイボール</span>450円</li>
+          </section>
+          <section class="list03">
+            <li><span>ソフトドリンク各種</span>350円</li>
+            <li><span>ノンアルコールビール</span>450円</li>
+            <li><span>カクテル各種</span>550円</li>
+          </section>
+        </div>
+      </div>
+
+      <p class="back-top scroll-fade"><a href="#top"><i class="fas fa-chevron-circle-up"></i></i></a></p>
+    </main>
+    <footer>
+      <div class="icons"><a href="#"><i class="fab fa-facebook-square"></i></a><a href="#"><i
+            class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-twitter-square"></i></a>
+      </div>
+      <h1><a href="#">SEÑOR TACO</a></h1>
+      <address>〒 904-0023 沖縄県沖縄市久保田3丁目1番12号 プラザハウス1F<br>TEL:098-933-9694</address>
+      <small>
+        <p>&copy; senor taco. All Rights Reserved</p>
+      </small>
+    </footer>
+
+  </div>
+</body>
+
+</html>

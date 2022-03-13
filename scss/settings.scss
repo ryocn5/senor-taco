@@ -1,0 +1,69 @@
+$main-color:#EE4A22;
+$accent-color:#00A85F;
+$base-color:#fff;
+$sriracha:'Sriracha';
+$icon-color:#602F00;
+
+@mixin center() {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+@mixin width1200() {
+  width: 1200px;
+  margin: 0 auto;
+}
+@mixin row(){
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+@mixin center-height($height) {
+  height: $height;
+  line-height: $height;
+  text-align: center;  
+}
+@mixin wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-content: space-between;
+}
+@mixin column-center{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin menu-h3{
+    background-image: url(../images/line.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    color: $icon-color;
+    font-size: 20px;
+    margin-bottom: 60px;
+  }
+  
+  @mixin menu-ul{ 
+    list-style-type: none;
+    font-size: 16px;
+   } 
+  @mixin menu-li{
+      @include row;
+      list-style-type: none;
+      font-size: 16px;
+      color: $icon-color;
+      width: 270px;
+      border-bottom: 1px dotted $icon-color;
+      line-height: 2;
+      margin-bottom: 15px;
+      }
+ @mixin font-menu-h2{
+  font-size: 60px;
+  font-family: $sriracha;
+ }   
+  
